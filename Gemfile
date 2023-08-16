@@ -35,5 +35,10 @@ group :production do
   gem "pg", "1.3.5"
 end
 
+gem "rails",           "7.0.4"
+gem "bootstrap-sass",  "3.4.1"
+gem "sassc-rails",     "2.1.2"
+gem "sprockets-rails", "3.4.2"
+
 # Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
 # gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
