@@ -42,6 +42,7 @@ Rails.application.configure do
   host = '<hex string>.vfs.cloud9.us-east-2.amazonaws.com' # ここをコピペすると失敗します。自分の環境のホストに変えてください。
   # クラウドIDEの場合は以下をお使いください
   config.action_mailer.default_url_options = { host: host, protocol: 'https' }
+  
   # localhostで開発している場合は以下をお使いください
   # config.action_mailer.default_url_options = { host: host, protocol: 'http' }
 
