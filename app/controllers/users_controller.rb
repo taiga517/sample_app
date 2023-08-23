@@ -47,8 +47,8 @@ class UsersController < ApplicationController
     redirect_to users_url, status: :see_other
   end
 
-  private     #private-------------------------------------------------------
-
+ #private-----------------------------------------------------------------------
+  private
     def user_params
       params.require(:user).permit(:name, :email, :password,
                                    :password_confirmation)
@@ -66,4 +66,5 @@ class UsersController < ApplicationController
     def admin_user
       redirect_to(root_url, status: :see_other) unless current_user.admin?
     end
+
 end
